@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ludo.css">
+    <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        
+      
+    </style>
+</head>
+<body>
+    <div class="container" >
+        <h1>JS Ludo Game</h1>
+        <div class="dice">
+            <p ><b>player 1</b></p>
+            <img src="1.jpg" id="check1">
+        </div>
+        <div class="dice">
+            <p ><b>player 2</b></p>
+            <img src="5.jpg" id=
+            "check2">
+          
+           
+        </div>
+        <div>
+            <button onclick="ludoGame()">Click Me</button>
+        </div>
+        
+       
+    </div>
+<script>
+    const ludoGame=()=>{
+    const play1=Math.floor(Math.random()*6)+1;
+    const play1dice=`${play1}.jpg`;
+    document.getElementById("check1").setAttribute('src' ,play1dice)
+    const play2=Math.floor(Math.random()*6)+1;
+    const play2dice=`${play2}.jpg`;
+    document.getElementById("check2").setAttribute('src',play2dice);
+    if(play1 > play2){
+        document.querySelector('h1').innerText="player 1 Win";
+    }else if(play1<play2){
+        document.querySelector('h1').innerText="player 2 win";
+    }else{
+        document.querySelector('h1').innerText="Draw";
+    }}
+
+</script>
+
+    
+</body>
+</html>

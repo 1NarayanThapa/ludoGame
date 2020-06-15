@@ -1,0 +1,36 @@
+*{
+         margin:0;
+        padding:0;   
+}
+.container{
+    text-align: center;
+    width: 70%;
+    margin: auto;
+
+}
+.dice{
+    text-align: center;
+    display:inline-block;
+    
+}
+body{
+    background-color: #0a3d52;
+}
+h1{
+    margin:30px;
+    text-shadow: 5px 0px  white;
+    font-size: 4rem;
+    font-family: 'Acme', sans-serif;
+}
+p{
+    font-size: 2rem;
+    columns: #00b894;
+    text-shadow: 1px 1px white;
+}
+button{
+    padding:10px;
+    background-color: #00b894;
+    color:white;
+    border:none;
+  
+}
